@@ -1,22 +1,34 @@
 import React from "react"
-import { About } from "./components/About"
+import { Home } from "./components/Home"
 import { Navbar } from "./components/Navbar";
+import { InstagramFeed } from "./components/InstagramFeed";
 import { Quote } from "./components/Quote";
+import { About } from "./components/About";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <> 
       <BrowserRouter>
         <Routes>
+          {/* home page */}
           <Route path="/" element={
             <>
               <Navbar/>
-              <About/>
+              <Home/>
               <Quote/>
-              {/* <Instagram/> */}
+              <InstagramFeed/>
             </>
           }>
+          </Route>
+          {/* about-us page */}
+          <Route path="/about" element={
+            <>
+              <Navbar/>
+              <About/>
+            </>
+          }>
+            
           </Route>
         </Routes>
       </BrowserRouter>
