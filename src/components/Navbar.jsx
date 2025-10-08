@@ -14,6 +14,7 @@ export const Navbar = () => {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
+  {/* update paths when other pages are created */}
   const navLinks = [
     { name: 'About Us', path: '/about-us' },
     { name: 'Events', path: '/events' },
@@ -27,9 +28,15 @@ export const Navbar = () => {
         {/* Top section */}
         <div className="flex flex-wrap items-center justify-between">
           {/* Logo - will be replaced once we have final version*/}
-          <Link to="/" className="mr-4 py-1.5 font-medium text-blue-gray-900">
-            UNICEF SFU
-          </Link>
+          <div className="flex items-center">
+            <Link to="/" className="mr-4 py-1.5 font-medium text-blue-gray-900">
+              <img
+                src="/unicef-logo.jpg"
+                alt="UNICEF logo"
+                className="w-50 h-auto"
+              />
+            </Link>
+          </div>
 
           {/* Desktop view */}
           <div className="hidden lg:flex items-center gap-x-2">
