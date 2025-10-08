@@ -30,6 +30,64 @@ export const Home = () => {
           proceeds raised each academic year are donated to UNICEF Canada.
         </p>
 
+      {/* our work section */}
+      <div className = "w-full bg-[#F9FAFB] py-16 flex flex-col items-center">
+        <h2 className="text-4xl font-bold text-center text-black mb-12">Our Work</h2>
+        <div className="flex flex-col gap-12 max-w-6xl px-6"></div>
+
+      {/* haiti */}
+        <div className="lex flex-col md:flex-row gap-8 items-center">
+          <img
+              src="/TEMPORARY.jpg" 
+              alt="Hearts For Haiti image"
+          className="w-full md:w-1/2 rounded-lg shadow-md object-cover"
+            ></img>
+          <div className="w-full md:w-1/2 text-left">
+            <h3 className="text-xl font-semibold text-[#1CABE2] mb-3">Hearts For Haiti</h3>
+            <p className = "text-[#585962]">In the Spring 2024 semester, UNICEF SFU launched their second advocacy campaign of the school year 
+            to raise awareness surrounding the children’s humanitarian crisis in Haiti.</p>
+          </div>
+        </div>
+      {/* gala */}
+        <div className= "w-full md:w-1/2 text-left">
+          <img
+          src="/minds-matter-gala.jpg"
+          alt="Minds Matter Gala image"
+          className="w-full md:w-1/2 rounded-lg shadow-md object-cover"
+          >
+          </img>
+          <div className= "w-full md:w-1/2 text-left">
+            <h3 className= "text-xl font-semibold text-[#1CABE2] mb-3">Minds Matter Gala 2024</h3>
+            <p className = "text-[#585962]">Minds Matter Gala was one of UNICEF SFU’s annual charity galas held in the Spring 2024 semester. 
+          This event advocated for integrating mental health into frameworks and systems that support children’s well-being 
+          and mental health in humanitarian emergencies and resource-limited settings.
+              <br></br>
+              <br></br>
+              Our charity gala featured guest speakers Dr. Laura Aiken, a psychology professor at Simon Fraser University, 
+          and Lauren Baniara, a registered clinical counsellor.
+            </p>
+          </div>
+        </div>
+      {/* halloween */}
+      <div className="lex flex-col md:flex-row gap-8 items-center">
+          <img
+              src="/TEMPORARY.jpg" 
+              alt="Halloween image"
+          className="w-full md:w-1/2 rounded-lg shadow-md object-cover"
+            ></img>
+          <div className="w-full md:w-1/2 text-left">
+            <h3 className="text-xl font-semibold text-[#1CABE2] mb-3">Halloween Bottle Drive 2024</h3>
+            <p className = "text-[#585962]">In the Fall 2024 semester, club-wide bottle drives raised over $500. 
+            Our team collected bottles from people around campus and donated them to local recycling centers.</p>
+            
+          </div>
+        </div>
+
+
+      </div>
+      
+
+
         {/* Stats Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 gap-4 w-full max-w-6xl mt-4">
           {stats.map((stat, index) => (
