@@ -16,7 +16,7 @@ export const Navbar = () => {
 
   {/* update paths when other pages are created */}
   const navLinks = [
-    { name: 'About Us', path: '/about-us' },
+    { name: 'About Us', path: '/about' },
     { name: 'Events', path: '/events' },
     { name: 'Contact', path: '/contact' },
     { name: 'Get Involved', path: '/get-involved' },

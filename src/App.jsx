@@ -4,6 +4,8 @@ import { Navbar } from "./components/Navbar";
 import { InstagramFeed } from "./components/InstagramFeed";
 import { Quote } from "./components/Quote";
 import { About } from "./components/About";
+import { Events } from "./components/Events";
+import { Contact } from "./components/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -27,9 +29,26 @@ function App() {
               <Navbar/>
               <About/>
             </>
-          }>
-            
+          }>           
           </Route>
+
+          {/* events page */}
+          <Route path="/events" element={
+            <>
+              <Navbar/>
+              <Events/>
+            </>
+          }>
+          </Route>
+
+          <Route path="/contact" element={
+            <>
+              <Navbar/>
+              <Contact/>
+            </>
+          }>
+          </Route>
+
         </Routes>
       </BrowserRouter>
     </>
