@@ -6,6 +6,7 @@ import { Quote } from "./components/Quote";
 import { About } from "./components/About";
 import { Events } from "./components/Events";
 import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
             <>
               <Navbar/>
               <Events/>
+              <Footer/>
             </>
           }>
           </Route>
