@@ -1,22 +1,50 @@
 export const Home = () => {
   const stats = [
-    { number: '500+', label: 'Club Members' },
-    { number: '15+', label: 'Fundraisers Held' },
-    { number: '$3,000+', label: 'Raised for Charity' },
-    { number: '60+', label: 'Advocacy Campaigns' },
+    { number: "500+", label: "Club Members" },
+    { number: "15+", label: "Fundraisers Held" },
+    { number: "$3,000+", label: "Raised for Charity" },
+    { number: "60+", label: "Advocacy Campaigns" },
+  ]
+
+  const galleryItems = [
+    {
+      id: "gallery-0",
+      title: "Button Station",
+      img: "/event-gallery/button-station.jpeg",
+    },
+    {
+      id: "gallery-1",
+      title: "Photo Room",
+      img: "/event-gallery/photo-room.jpeg",
+    },
+    {
+      id: "gallery-2",
+      title: "Presentation",
+      img: "/event-gallery/presentation.jpeg",
+    },
+    {
+      id: "gallery-3",
+      title: "Work Simulation",
+      img: "/event-gallery/work-simulation.jpeg",
+    },
   ]
 
   return (
     <div>
       {/* Banner */}
       <div className="relative w-full h-96">
-        <img 
-          src="/banner.jpeg" 
-          alt="UNICEF image" 
+        <img
+          src="/banner.jpeg"
+          alt="UNICEF image"
           className="w-full h-full object-cover"
         />
         <div className="absolute bottom-8 left-15 text-white">
-          <p className="text-4xl font-semibold" style={{ textShadow: '2px 2px 8px rgba(0, 0, 0, 0.8)' }}>For every child, <span className="text-[#65D5FF]">hope</span></p>
+          <p
+            className="text-4xl font-semibold"
+            style={{ textShadow: "2px 2px 8px rgba(0, 0, 0, 0.8)" }}
+          >
+            For every child, <span className="text-[#65D5FF]">hope</span>
+          </p>
         </div>
       </div>
 
@@ -33,7 +61,7 @@ export const Home = () => {
         {/* Stats Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 gap-4 w-full max-w-6xl mt-4">
           {stats.map((stat, index) => (
-            <div 
+            <div
               key={index}
               className="flex flex-col items-center justify-center p-4 bg-white rounded-lg"
             >
@@ -45,6 +73,39 @@ export const Home = () => {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* Event Gallery */}
+      <div className="w-full bg-[#D9D9D9] py-16">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col items-center">
+          <h2 className="text-4xl font-semibold text-[#1CABE2] mb-3">
+            Event Gallery
+          </h2>
+          <p className="text-sm text-black/70 text-center mb-10">
+            Browse through our image gallery of previous events and fundraisers!
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 w-full">
+            {galleryItems.map((item) => (
+              <div
+                key={item.id}
+                className="bg-white rounded-2xl h-44 sm:h-48 md:h-52 shadow-sm overflow-hidden"
+              >
+                {item.img ? (
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-black/30 font-medium">
+                    Image
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
