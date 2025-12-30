@@ -16,7 +16,10 @@ export default {
         }
 
         if (url.pathname !== "/api/contact") {
-            return new Response("Not Found", { status: 404 });
+            return new Response("Not Found", { 
+                status: 404, 
+                headers: corsHeaders 
+            });
         }
 
         if (req.method !== "POST") {
@@ -39,7 +42,11 @@ export default {
         // spam protection - if hidden field is filled, then detected spam
         if (body.company) {
             return new Response(JSON.stringify({ success: true }), {
-                headers: corsHeaders,
+                status: 200, 
+                headers: {
+                    "Content-Type": "application/json", 
+                    ...corsHeaders
+                }
             });
         }
 
@@ -93,7 +100,11 @@ export default {
 
         return new Response(
             JSON.stringify({ success: true }), { 
-                headers: corsHeaders 
+                status: 200, 
+                headers: {
+                    "Content-Type": "application/json", 
+                    ...corsHeaders
+                }
             }
         );
     }
