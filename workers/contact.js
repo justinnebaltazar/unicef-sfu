@@ -64,7 +64,7 @@ export default {
                     "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                from: "onboarding@resend.dev",
+                from: "UNICEF SFU <contact@unicefsfucampusclub.ca>",
                 to: "usfu.club@gmail.com",
                 subject: "New Contact Form Submission", 
                 html: `
