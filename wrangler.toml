@@ -1,0 +1,3 @@
+name = "unicefsfu-contact-worker"
+main = "workers/contact.js"
+compatibility_date = "2025-12-29"

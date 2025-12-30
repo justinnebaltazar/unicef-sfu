@@ -38,7 +38,6 @@ function App() {
             <>
               <Navbar/>
               <Events/>
-              <Footer/>
             </>
           }>
           </Route>
@@ -52,6 +51,7 @@ function App() {
           </Route>
 
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   )
