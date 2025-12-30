@@ -19,7 +19,7 @@ export const Navbar = () => {
     { name: 'About Us', path: '/about' },
     { name: 'Events', path: '/events' },
     { name: 'Contact', path: '/contact' },
-    { name: 'Get Involved', path: '/get-involved' },
+    { name: 'Get Involved', path: 'https://linktr.ee/unicefsfu?utm_source=linktree_profile_share&ltsid=ecfc8b55-7a29-4e95-8414-e7ac341f79f5' },
   ]
 
   return (

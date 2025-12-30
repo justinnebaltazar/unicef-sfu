@@ -1,12 +1,28 @@
+import { Link } from 'react-router-dom'
+
 export const Footer = () => {
+    const footerLinks = [
+        { name: 'Home', path: '/' },
+        { name: 'About Us', path: '/about' },
+        { name: 'Events', path: '/events' },
+        { name: 'Contact', path: '/contact' },
+        { name: 'Get Involved', path: '/about' },
+    ]
+
+    const socialLinks = [
+        { name: 'Instagram', path: 'https://www.instagram.com/usfuclub/', icon: "/instagram-logo.png"},
+        { name: 'TikTok', path: 'https://www.tiktok.com/@unicefsfu', icon: "/tiktok-logo.png"},
+        { name: 'LinkedIn', path: 'https://www.linkedin.com/company/unicef-sfu/', icon: "/linkedin-logo.png"},
+    ]
+
      return (
-        <footer className="w-full bg-[#E8F6FC] text-[#585962]">
+        <div className="w-full bg-[#E8F6FC] text-[#585962]">
             <div className="max-w-7xl mx-auto px-6 py-12">
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 justify-between">
                     {/* logo + description */}
                     <div className="flex flex-col items-center lg:items-start gap-6 w-full lg:w-2/5">
                         <img
-                            src="/unicef-logo.jpg"
+                            src="/unicef-logo.png"
                             alt="UNICEF logo"
                             className="w-48 lg:w-56 object-contain"
                         />
@@ -21,11 +37,13 @@ export const Footer = () => {
                     <div className="flex flex-col items-center lg:items-start gap-4 w-full lg:w-1/5 text-center lg:text-left">
                         <h3 className="text-xl font-semibold text-[#1F145D]">Website</h3>
                         <ul className="space-y-2">
-                            <li className="hover:text-[#009EDB] transition-colors">Home</li>
-                            <li className="hover:text-[#009EDB] transition-colors">About Us</li>
-                            <li className="hover:text-[#009EDB] transition-colors">Events</li>
-                            <li className="hover:text-[#009EDB] transition-colors">Contact</li>
-                            <li className="hover:text-[#009EDB] transition-colors">Get Involved</li>
+                            {footerLinks.map((link) => (
+                                <li key={link.name}>
+                                    <Link 
+                                        to={link.path} 
+                                        className="hover:text-[#009EDB] transition-colors">{link.name}</Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
@@ -36,19 +54,18 @@ export const Footer = () => {
                             Follow us on social media to get the latest updates on events and fundraisers.
                         </p>
                         <div className="flex items-center gap-4 justify-center lg:justify-start">
-                            <a aria-label="Instagram">
-                                <img src="/instagram-logo.png" alt="Instagram logo" className="w-10 h-10" />
-                            </a>
-                            <a aria-label="TikTok">
-                                <img src="/tiktok-logo.png" alt="TikTok logo" className="w-10 h-10" />
-                            </a>
-                            <a aria-label="LinkedIn">
-                                <img src="/linkedin-logo.png" alt="LinkedIn logo" className="w-10 h-10" />
-                            </a>
+                            {/* social media links */}
+                            {socialLinks.map((link) => (
+                                <a href={link.path} aria-label={link.name} target="_blank" rel="noopener noreferrer">
+                                    <img src={link.icon} alt={link.name + ' logo'} className='w-10 h-10'></img>
+                                </a>
+                            ))
+
+                            }
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
     )
 }
