@@ -4,10 +4,26 @@ export const InstagramFeed = () => {
     return (
         <div className="bg-[#EEEEEE] p-3">
             <div className="flex flex-col items-center justify-center p-7">
-                <p className="text-2xl text-[#585962] p-5 text-center">Follow us to stay updated on our events and opportunities</p>
-                <p className="text-2xl">@usfuclub</p>
+                <p className="text-xl sm:text-2xl text-[#585962] p-5 text-center">Follow us to stay updated on our events and opportunities</p>
+                <div className="flex items-center gap-3">
+                    <a
+                        href="https://www.instagram.com/usfuclub/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        className="flex items-center"
+                    >
+                        <img src="instagram-logo.png" alt="instagram-logo" className="w-7 h-7"/>
+                    </a>
+                    <a href="https://www.instagram.com/usfuclub/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        className="flex items-center">
+                        <p className="text-xl sm:text-2xl"> usfuclub</p>
+                    </a>
+                </div>
+
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-10">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-10 mb-10">
                 {posts.map(post => (
                     <a
                     key={post.id}
