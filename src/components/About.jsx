@@ -108,9 +108,9 @@ const TeamSection = () => {
 
 export const About = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full">
-      <div className="flex flex-col items-center justify-center p-20 w-full">
-        <p className="text-2xl w-3/4 text-justify p-10">
+    <div className="flex flex-col items-center justify-center w-full mt-4">
+      <div className="flex flex-col items-center justify-center w-full px-4 sm:p-2">
+        <p className="text-xl sm:text-2xl w-full sm:w-3/4 lg:w-1/2 text-justify p-5 sm:p-10">
           <span className="text-[#009EDB] font-bold">
             UNICEF is the world’s leading child-focused humanitarian and development agency.
           </span>{" "}
@@ -119,7 +119,7 @@ export const About = () => {
           voluntary donations and helps all children, regardless of race, religion or politics.
         </p>
 
-        <p className="text-2xl w-3/4 text-justify p-10">
+        <p className="text-xl sm:text-2xl w-full sm:w-3/4 lg:w-1/2 text-justify p-5 sm:p-10">
           UNICEF SFU is the university’s largest student club dedicated to humanitarian efforts,
           directly affiliated with UNICEF Canada educates, advocates and fundraises UNICEF’s work to
           defend every child’s right to a childhood.

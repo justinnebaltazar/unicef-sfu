@@ -14,18 +14,18 @@ export const Events = () => {
     }
 
     return (
-        <div className="flex flex-col items-center justify-center p-20 w-full">
+        <div className="flex flex-col items-center justify-center p-10 sm:p-20 w-full">
             {/* header */}
             <div className="flex flex-col items-center justify-center p-2 mb-12">
-                <h2 className="text-4xl w-3/4 text-center p-10 text-[#009EDB] font-semibold">Upcoming Events</h2>
-                <p className="text-xl text-center w-1/2 text-[#585962]">UNICEF SFU holds a wide variety of events every month, from General Meetings to donation drives. Make a difference by contributing to our fundraisers and advocacy events.</p>
+                <h2 className="text-2xl sm:text-4xl  w-full sm:w-3/4 text-center p-5 sm:p-10 text-[#009EDB] font-semibold">Upcoming Events</h2>
+                <p className="text-xl text-center  w-full sm:w-1/2 text-[#585962]">UNICEF SFU holds a wide variety of events every month, from General Meetings to donation drives. Make a difference by contributing to our fundraisers and advocacy events.</p>
             </div>
             
             {/* events section */}
-            <div className="w-9/10 max-w-6xl p-4">
+            <div className="w-full sm:w-9/10 max-w-6xl p-4">
                 {events.map((monthData, monthIndex) => (
                     <div key={monthIndex}>
-                        <h3 className="text-4xl p-8 text-[#009EDB] font-semibold">{monthData.month} Events</h3>
+                        <h3 className="text-2xl sm:text-4xl p-2 sm:p-8 text-[#009EDB] font-semibold">{monthData.month} Events</h3>
 
                         {/* all upcoming events for the month */}
                         {monthData.events.map((event, eventIndex) => (
@@ -48,11 +48,11 @@ export const Events = () => {
 
                                     {/* text info */}
                                     <div className="flex flex-col justify-center flex-1 items-center md:items-start text-center md:text-left">
-                                        <h4 className="text-2xl text-[#1F145D] font-semibold mb-4">{event.title}</h4>
+                                        <h4 className="text-xl sm:text-2xl text-[#1F145D] font-semibold mb-4">{event.title}</h4>
 
                                         {/* event location */}
                                         <div className="flex items-center gap-3 mb-4 justify-center md:justify-start">
-                                            <img src="/location-icon.png" alt="location-icon" className="w-8 h-8"/>
+                                            <img src="/location-icon.png" alt="location-icon" className="hidden sm:block w-8 h-8"/>
                                             <div>
                                                 <p className="text-md text-[#5D5D5D]">{event.building}</p>
                                                 <p className="text-md text-[#5D5D5D]">{event.room}</p>
@@ -62,7 +62,7 @@ export const Events = () => {
                                         
                                         {/* time info */}
                                         <div className="flex items-center gap-3 mb-4 justify-center md:justify-start">
-                                            <img src="/clock-icon.png" alt="time" className="w-8 h-8"/>
+                                            <img src="/clock-icon.png" alt="time" className="hidden sm:block w-8 h-8"/>
 
                                             <p className="text-md text-[#5D5D5D]">{event.time}</p>
                                         </div>
@@ -79,7 +79,7 @@ export const Events = () => {
                                 </div>
 
                                 {/* image */}
-                                <div className="w-full md:w-1/2 flex-shrink-0 flex items-center justify-center md:justify-end p-4">
+                                <div className="w-full md:w-1/2 flex-shrink-0 flex items-center justify-center md:justify-end p-3 sm:p-4">
                                     <div className="w-[220px] h-[220px] rounded-2xl overflow-hidden bg-white shadow-sm">
                                         <img 
                                             src={event.imgLink} alt={event.title} className="w-full h-full object-cover"
