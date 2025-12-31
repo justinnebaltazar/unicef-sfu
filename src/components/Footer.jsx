@@ -5,8 +5,7 @@ export const Footer = () => {
         { name: 'Home', path: '/' },
         { name: 'About Us', path: '/about' },
         { name: 'Events', path: '/events' },
-        { name: 'Contact', path: '/contact' },
-        { name: 'Get Involved', path: '/about' },
+        { name: 'Contact', path: '/contact' }
     ]
 
     const socialLinks = [
@@ -44,6 +43,10 @@ export const Footer = () => {
                                         className="hover:text-[#009EDB] transition-colors">{link.name}</Link>
                                 </li>
                             ))}
+                            <li>
+                                <a href="https://linktr.ee/unicefsfu?utm_source=linktree_profile_share&ltsid=ecfc8b55-7a29-4e95-8414-e7ac341f79f5"
+                                    key="get-involved" target='_blank' rel="noopener noreferrer" className="hover:text-[#009EDB] transition-colors">Get Involved</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -56,7 +59,7 @@ export const Footer = () => {
                         <div className="flex items-center gap-4 justify-center lg:justify-start">
                             {/* social media links */}
                             {socialLinks.map((link) => (
-                                <a href={link.path} aria-label={link.name} target="_blank" rel="noopener noreferrer">
+                                <a key={link.name} href={link.path} aria-label={link.name} target="_blank" rel="noopener noreferrer">
                                     <img src={link.icon} alt={link.name + ' logo'} className='w-10 h-10'></img>
                                 </a>
                             ))

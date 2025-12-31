@@ -18,8 +18,7 @@ export const Navbar = () => {
   const navLinks = [
     { name: 'About Us', path: '/about' },
     { name: 'Events', path: '/events' },
-    { name: 'Contact', path: '/contact' },
-    { name: 'Get Involved', path: 'https://linktr.ee/unicefsfu?utm_source=linktree_profile_share&ltsid=ecfc8b55-7a29-4e95-8414-e7ac341f79f5' },
+    { name: 'Contact', path: '/contact' }
   ]
 
   return (
@@ -42,7 +41,8 @@ export const Navbar = () => {
           <div className="hidden lg:flex items-center gap-x-2">
             <div className="relative flex w-full gap-2 md:w-max">
               <button className="bg-[#374EA2] hover:bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-medium">
-                Donate
+                <a href="https://go.sfss.ca/clubs/166/info" 
+                  target='_blank' rel='noopener noreferrer'>Join USFU</a>
               </button>
             </div>
           </div>
@@ -77,6 +77,12 @@ export const Navbar = () => {
                   </Link>
                 </li>
               ))}
+                <li key="get-involved">
+                  <a href="https://linktr.ee/unicefsfu?utm_source=linktree_profile_share&ltsid=ecfc8b55-7a29-4e95-8414-e7ac341f79f5"
+                    target="_blank" rel="noopener noreferrer"
+                    className="p-1 font-medium text-black hover:text-gray-900 text-sm">
+                    Get Involved</a>
+                </li>
             </ul>
           </div>
         </div>
@@ -95,10 +101,17 @@ export const Navbar = () => {
                   </Link>
                 </li>
               ))}
+                <li key="get-involved">
+                  <a href="https://linktr.ee/unicefsfu?utm_source=linktree_profile_share&ltsid=ecfc8b55-7a29-4e95-8414-e7ac341f79f5"
+                    target="_blank" rel="noopener noreferrer"
+                    className="p-1 font-medium text-gray-600 hover:text-gray-900 text-sm">
+                    Get Involved</a>
+                </li>
             </ul>
             <div className="flex flex-col sm:flex-row sm:items-center gap-2">
               <button className="bg-[#374EA2] hover:bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-medium w-full sm:w-auto">
-                Donate
+                <a href="https://go.sfss.ca/clubs/166/info" 
+                  target='_blank' rel='noopener noreferrer'>Join USFU</a>
               </button>
             </div>
           </div>

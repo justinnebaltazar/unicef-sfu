@@ -59,7 +59,7 @@ export const Home = () => {
         </p>
 
         {/* Stats Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 gap-4 w-full max-w-6xl mt-4">
+        <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 gap-4 w-full max-w-6xl my-8">
           {stats.map((stat, index) => (
             <div
               key={index}

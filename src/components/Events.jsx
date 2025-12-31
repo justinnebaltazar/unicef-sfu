@@ -29,10 +29,10 @@ export const Events = () => {
 
                         {/* all upcoming events for the month */}
                         {monthData.events.map((event, eventIndex) => (
-                            <div key={eventIndex} className="w-full max-w-4xl mx-auto flex bg-[#e5f7fd] rounded-2xl m-4 overflow-hidden">
+                            <div key={eventIndex} className="w-full max-w-3xl mx-auto flex flex-col md:flex-row bg-[#e5f7fd] rounded-2xl m-4 overflow-hidden">
                                 
                                 {/* left column info */}
-                                <div className="flex-1 flex gap-6 pl-8 pr-2 py-8">
+                                <div className="flex-1 flex flex-col md:flex-row gap-6 px-6 md:pl-8 md:pr-2 py-8">
 
                                     {/* date box */}
                                     <div className="flex flex-col items-center justify-center bg-white/60 rounded-xl px-4 py-3 h-fit self-center">
@@ -47,11 +47,11 @@ export const Events = () => {
                                     </div>
 
                                     {/* text info */}
-                                    <div className="flex flex-col justify-center flex-1">
+                                    <div className="flex flex-col justify-center flex-1 items-center md:items-start text-center md:text-left">
                                         <h4 className="text-2xl text-[#1F145D] font-semibold mb-4">{event.title}</h4>
 
                                         {/* event location */}
-                                        <div className="flex items-start gap-3 mb-4">
+                                        <div className="flex items-center gap-3 mb-4 justify-center md:justify-start">
                                             <img src="/location-icon.png" alt="location-icon" className="w-8 h-8"/>
                                             <div>
                                                 <p className="text-md text-[#5D5D5D]">{event.building}</p>
@@ -61,7 +61,7 @@ export const Events = () => {
                                         </div>
                                         
                                         {/* time info */}
-                                        <div className="flex items-start gap-3 mb-4">
+                                        <div className="flex items-center gap-3 mb-4 justify-center md:justify-start">
                                             <img src="/clock-icon.png" alt="time" className="w-8 h-8"/>
 
                                             <p className="text-md text-[#5D5D5D]">{event.time}</p>
@@ -69,8 +69,8 @@ export const Events = () => {
 
                                         {/* instagram link post / more info  */}
                                         {event.postLink && (
-                                            <a href={event.postLink} target="_blank" rel="noopener noreferrer" className="mt-2 w-fit">
-                                                <button className="px-6 py-2 bg-[#009EDB] text-white rounded-full font-semibold hover:bg-[#007fb0] transition">
+                                            <a href={event.postLink} target="_blank" rel="noopener noreferrer" className="mt-4 w-fit self-center md:self-start">
+                                                <button className="px-6 py-2 bg-[#009EDB] text-white rounded-lg font-semibold hover:bg-[#007fb0] transition">
                                                     Learn More
                                                 </button>
                                             </a>
@@ -79,7 +79,7 @@ export const Events = () => {
                                 </div>
 
                                 {/* image */}
-                                <div className="w-1/2 flex-shrink-0 flex items-center justify-end p-4">
+                                <div className="w-full md:w-1/2 flex-shrink-0 flex items-center justify-center md:justify-end p-4">
                                     <div className="w-[220px] h-[220px] rounded-2xl overflow-hidden bg-white shadow-sm">
                                         <img 
                                             src={event.imgLink} alt={event.title} className="w-full h-full object-cover"
@@ -97,7 +97,7 @@ export const Events = () => {
             </div>
 
             {/* our work section */}
-            <div className="w-full bg-[#F9FAFB] py-16 flex flex-col items-center">
+            <div className="w-full bg-[#F9FAFB] py-16 flex flex-col items-center mt-20">
                 <h2 className="text-4xl font-bold text-center text-black mb-12">Our Work</h2>
                 <div className="flex flex-col gap-12 max-w-6xl px-6">
                     {/* haiti */}
