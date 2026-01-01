@@ -5,14 +5,6 @@ export const Events = () => {
 
     const getMonthAbbreviation = (month) => month.slice(0, 3).toUpperCase()
 
-    if (!events.length) {
-        return (
-            <div className="py-24 text-center text-gray-500 text-lg">
-                Loading events...
-            </div>
-        )
-    }
-
     return (
         <div className="flex flex-col items-center justify-center p-10 sm:p-20 w-full">
             {/* header */}
