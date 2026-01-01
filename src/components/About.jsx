@@ -13,8 +13,7 @@ const TEAM_DATA = {
     { name: "Isha Cheema", role: "Ambassador", img: "/team pics/Isha-Cheema.jpeg" },
     { name: "Tajin Rai", role: "Internal Events Director", img: "/team pics/Tajin-Rai.jpeg"},
     { name: "Angela Luong", role: "Ambassador", img: "/team pics/Angela-Luong.jpeg"},
-    { name: "Yar Biar", role: "Internal Events Director", img: "/team pics/Yar-Biar.jpeg" },
-    { name: "Zainab Salam", role: "Ambassador", img: "/team pics/Zainab-Salam.jpeg" },
+    { name: "Yar Biar", role: "Internal Events Director", img: "/team pics/Yar-Biar.png" },
     { name: "Linda Palchevsky", role: "Internal Events Director", img: "/team pics/Linda-Palchevsky.jpeg"},
     { name: "Lakshmi Harman", role: "Ambassador", img: "/team pics/Lakshmi-Harman.jpeg" },
 
@@ -22,7 +21,6 @@ const TEAM_DATA = {
   "Externals Team": [
     { name: "Rowen Mack", role: "Outreach Director", img: "/team pics/Rowen-Mack.jpeg"},
     { name: "Colleen Flores", role: "Fundraising Director", img: "/team pics/Colleen-Flores.jpeg"},
-    { name: "Avneet Khangura", role: "Fundraising Director", img: "/team pics/Avneet-Khangura.jpeg"},
     { name: "Eshal Usmani", role: "Volunteer Director", img: "/team pics/Eshal-Usmani.jpeg"},
     { name: "Andrea Watanabe", role: "Logistics Director", img: "/team pics/Andrea-Watanabe.jpeg"},
     { name: "Jenny Nguyen", role: "Logisitcs Director", img: "/team pics/Jenny-Nguyen.jpeg"},

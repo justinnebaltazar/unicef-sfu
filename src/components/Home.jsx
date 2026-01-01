@@ -49,9 +49,9 @@ export const Home = () => {
       </div>
 
       {/* Who we are section */}
-      <div className="w-full text-[#585962] flex flex-col items-center justify-center px-4 md:px-8 lg:px-12 pt-16 pb-9 gap-8 text-center">
+      <div className="w-full text-[#585962] flex flex-col items-center justify-center px-8 md:px-10 pt-16 pb-9 gap-8 text-center">
         <h2 className="font-bold text-4xl text-black">Who We Are</h2>
-        <p className="w-full md:w-2/3 lg:w-1/2 text-black text-lg text-justify mb-5">
+        <p className="w-full md:w-2/3 lg:w-1/2 px-4 text-black text-lg text-justify mb-5">
           We are Simon Fraser University's student-led Campus Club directly
           affiliated with UNICEF Canada. We hold events that fundraise, raise
           awareness and advocate on behalf of children around the world. 100% of

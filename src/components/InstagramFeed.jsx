@@ -23,7 +23,7 @@ export const InstagramFeed = () => {
                 </div>
 
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-10 mb-10">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 md:p-10 mb-10">
                 {posts.map(post => (
                     <a
                     key={post.id}

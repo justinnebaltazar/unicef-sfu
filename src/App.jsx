@@ -8,6 +8,7 @@ import { Events } from "./components/Events";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Sponsors } from "./components/Sponsors";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Home/>
               <Quote/>
               <InstagramFeed/>
+              <Sponsors/>
             </>
           }>
           </Route>
