@@ -21,6 +21,10 @@ export const Navbar = () => {
     { name: 'Contact', path: '/contact' }
   ]
 
+  const handleLinkClick = () => {
+    setOpenNav(false)
+  }
+
   return (
     <nav className="bg-white shadow-sm px-5">
       <div className="max-w-screen-xl mx-auto px-4 py-2 lg:px-8 lg:py-4">
@@ -96,6 +100,7 @@ export const Navbar = () => {
                   <Link
                     to={link.path}
                     className="p-1 font-medium text-gray-600 hover:text-gray-900 text-sm flex items-center"
+                    onClick={handleLinkClick}
                   >
                     {link.name}
                   </Link>
