@@ -23,8 +23,8 @@ const TEAM_DATA = {
     { name: "Colleen Flores", role: "Fundraising Director", img: "/team pics/Colleen-Flores.jpeg"},
     { name: "Eshal Usmani", role: "Volunteer Director", img: "/team pics/Eshal-Usmani.jpeg"},
     { name: "Andrea Watanabe", role: "Logistics Director", img: "/team pics/Andrea-Watanabe.jpeg"},
-    { name: "Jenny Nguyen", role: "Logisitcs Director", img: "/team pics/Jenny-Nguyen.jpeg"},
-    { name: "Baljot Reehal", role: "Logisitcs Director", img: "/team pics/Baljot-Reehal.jpeg"},
+    { name: "Jenny Nguyen", role: "Logistics Director", img: "/team pics/Jenny-Nguyen.jpeg"},
+    { name: "Baljot Reehal", role: "Logistics Director", img: "/team pics/Baljot-Reehal.jpeg"},
     { name: "Winston Zhou", role: "Sponsorship Director", img: "/team pics/Winston-Zhou.jpeg"},
     { name: "Junghun Byun", role: "Sponsorship Director", img: "/team pics/Junghun-Byun.jpg"},
     { name: "Kudrat Kochhar", role: "Sponsorship Director", img: "/team pics/Kudrat-Kochhar.jpeg"},
@@ -118,9 +118,9 @@ export const About = () => {
         </p>
 
         <p className="text-xl sm:text-2xl w-full sm:w-3/4 lg:w-1/2 text-justify p-5 sm:p-10">
-          UNICEF SFU is the university’s largest student club dedicated to humanitarian efforts,
-          directly affiliated with UNICEF Canada educates, advocates and fundraises UNICEF’s work to
-          defend every child’s right to a childhood.
+          UNICEF SFU is the university’s largest student club dedicated to humanitarian efforts and is 
+          directly affiliated with UNICEF Canada. We are dedicated to advocating and fundraising for 
+          UNICEF’s work to defend every child’s right to a childhood.
         </p>
       </div>
 
