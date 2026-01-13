@@ -31,8 +31,7 @@ const TEAM_DATA = {
 
   ],
   Finance: [
-    { name: "Akash Jassal", role: "Finance Director", img: "/team pics/Akash-Jassal.jpeg" },
-    { name: "Martin Aguliar", role: "VP Of Finance", img: "/team pics/Martin-Aguilar.jpeg" },
+    { name: "Akash Jassal", role: "Finance Director", img: "/team pics/Akash-Jassal.jpeg" }
   ],
   Communications: [
     { name: "Aliza Sandhu", role: "Graphics Director", img: "/team pics/Aliza-Sandhu.jpeg" },

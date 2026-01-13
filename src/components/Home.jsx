@@ -32,11 +32,11 @@ export const Home = () => {
   return (
     <div>
       {/* Banner */}
-      <div className="relative w-full h-96">
+      <div className="relative w-full aspect-[22/10] overflow-hidden">
         <img
-          src="/banner.jpeg"
+          src="/new-banner.png"
           alt="UNICEF image"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-[100%_100%]"
         />
         <div className="absolute bottom-8 left-15 text-white">
           <p

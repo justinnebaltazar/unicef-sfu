@@ -49,6 +49,13 @@ export const Navbar = () => {
                   target='_blank' rel='noopener noreferrer'>Join USFU</a>
               </button>
             </div>
+
+            <div className="relative flex w-full gap-2 md:w-max">
+              <button className="bg-[#374EA2] hover:bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-medium">
+                <a href="https://fundraise.unicef.ca/campus-clubs-2025/unicef-sfu-fundraising-" 
+                  target='_blank' rel='noopener noreferrer'>Donate</a>
+              </button>
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -117,6 +124,11 @@ export const Navbar = () => {
               <button className="bg-[#374EA2] hover:bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-medium w-full sm:w-auto">
                 <a href="https://go.sfss.ca/clubs/166/info" 
                   target='_blank' rel='noopener noreferrer'>Join USFU</a>
+              </button>
+              
+              <button className="bg-[#374EA2] hover:bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-medium w-full sm:w-auto">
+                <a href="https://fundraise.unicef.ca/campus-clubs-2025/unicef-sfu-fundraising-" 
+                  target='_blank' rel='noopener noreferrer'>Donate</a>
               </button>
             </div>
           </div>
