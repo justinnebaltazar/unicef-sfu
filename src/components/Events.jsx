@@ -87,64 +87,6 @@ export const Events = () => {
                     </div>
                 ))}
             </div>
-
-            {/* our work section */}
-            <div className="w-full bg-[#F9FAFB] py-16 flex flex-col items-center mt-20">
-                <h2 className="text-4xl font-bold text-center text-black mb-12">Our Work</h2>
-                <div className="flex flex-col gap-12 max-w-6xl px-6">
-
-                    {/* bright futures gala */}
-                    <div className="flex flex-col md:flex-row gap-8 items-center">
-                        <img
-                            src="/bright-futures-gala.png"
-                            alt="Bright Futures Gala image"
-                            className="w-full md:w-1/2 rounded-lg shadow-md object-cover"
-                        />
-                        <div className="w-full md:w-1/2 text-left">
-                            <h3 className="text-xl font-semibold text-[#1CABE2] mb-3">Bright Futures Gala 2025</h3>
-                            <p className="text-[#585962]">
-                                The Bright Futures Gala was one of UNICEF SFU's annual charity galas that took place in March 2025, focussing on Child Protection and Inclusion, which is one of UNICEF’s key global focus areas. 
-                                The event brought together over 120 attendees for an inspiring evening dedicated to advocating for the safety, inclusion, and empowerment of every child.
-                                We were honoured to welcome best-selling author and educator Hannah Beach as our keynote speaker, whose work in social-emotional learning resonated deeply with the evening’s message.
-                                <br />
-                                <br />
-                                The event also raised over $3,300 in donations, with 100% of proceeds directly contributed to UNICEF Canada to support programs that protect children from violence, exploitation, and discrimination.
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* halloween */}
-                    <div className="flex flex-col md:flex-row gap-8 items-center">
-                        <img
-                            src="/halloween-bottle-drive.png"
-                            alt="Halloween image"
-                            className="w-full md:w-1/2 rounded-lg shadow-md object-cover"
-                        />
-                        <div className="w-full md:w-1/2 text-left">
-                            <h3 className="text-xl font-semibold text-[#1CABE2] mb-3">Halloween Bottle Drive 2024</h3>
-                            <p className="text-[#585962]">
-                                In the Fall 2024 semester, our team got together to collect bottles from residences around our campus, raising over $500. 
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* haiti */}
-                    <div className="flex flex-col md:flex-row gap-8 items-center">
-                        <img
-                            src="/hearts-for-haiti.png"
-                            alt="Hearts For Haiti image"
-                            className="w-full md:w-1/2 rounded-lg shadow-md object-cover"
-                        />
-                        <div className="w-full md:w-1/2 text-left">
-                            <h3 className="text-xl font-semibold text-[#1CABE2] mb-3">Hearts For Haiti</h3>
-                            <p className="text-[#585962]">
-                                In the Spring 2024 semester, UNICEF SFU launched their second advocacy campaign of the school year
-                                to raise awareness surrounding the children's humanitarian crisis in Haiti.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     )
 }
