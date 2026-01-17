@@ -9,6 +9,7 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Sponsors } from "./components/Sponsors";
+import { PastEvents } from "./components/PastEvents";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             <>
               <Navbar/>
               <Events/>
+              <PastEvents/>
             </>
           }>
           </Route>
