@@ -6,7 +6,7 @@ export const PastEventsCard = ({ pastEvent : {eventName, date, image, alt, descr
             />
 
             <div className="w-full text-left">
-                <h3 className="text-xl font-semibold text-[#1CABE2] mb-3">{eventName}</h3>
+                <h3 className="text-l md:text-xl font-semibold text-[#1CABE2] mb-3">{eventName}</h3>
                 <p className="text-[#585962]">
                     {descriptions[0]}
                     
