@@ -16,11 +16,13 @@ const TEAM_DATA = {
     { name: "Yar Biar", role: "Internal Events Director", img: "/team pics/Yar-Biar.png" },
     { name: "Linda Palchevsky", role: "Internal Events Director", img: "/team pics/Linda-Palchevsky.jpeg"},
     { name: "Lakshmi Harman", role: "Ambassador", img: "/team pics/Lakshmi-Harman.jpeg" },
+    { name: "Olivia Tuan", role: "Ambassador", img: "/team pics/Olivia_Tuan.jpeg"}
 
   ],
   "Externals Team": [
     { name: "Rowen Mack", role: "Outreach Director", img: "/team pics/Rowen-Mack.jpeg"},
     { name: "Colleen Flores", role: "Fundraising Director", img: "/team pics/Colleen-Flores.jpeg"},
+    { name: "Jennie Park", role: "Fundraising Director", img: "/team pics/Jennie_Park.jpeg"},
     { name: "Eshal Usmani", role: "Volunteer Director", img: "/team pics/Eshal-Usmani.jpeg"},
     { name: "Andrea Watanabe", role: "Logistics Director", img: "/team pics/Andrea-Watanabe.jpeg"},
     { name: "Jenny Nguyen", role: "Logistics Director", img: "/team pics/Jenny-Nguyen.jpeg"},
