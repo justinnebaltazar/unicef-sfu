@@ -14,7 +14,7 @@ export const Events = () => {
             </div>
             
             {/* events section */}
-            <div className="w-full sm:w-9/10 max-w-6xl p-4">
+            <div className="w-full sm:w-9/10 max-w-5xl p-4">
                 {events.map((monthData, monthIndex) => (
                     <div key={monthIndex}>
                         <h3 className="text-2xl sm:text-4xl p-2 sm:p-8 text-[#009EDB] font-semibold">{monthData.month} Events</h3>
@@ -24,7 +24,7 @@ export const Events = () => {
                             <div key={eventIndex} className="w-full max-w-3xl mx-auto flex flex-col md:flex-row bg-[#e5f7fd] rounded-2xl m-4 overflow-hidden">
                                 
                                 {/* left column info */}
-                                <div className="flex-1 flex flex-col md:flex-row gap-6 px-6 md:pl-8 md:pr-2 py-8">
+                                <div className="flex flex-col md:flex-row gap-6 px-6 md:pl-8 md:pr-2 py-8 md:max-w-[60%]">
 
                                     {/* date box */}
                                     <div className="flex flex-col items-center justify-center bg-white/60 rounded-xl px-4 py-3 h-fit self-center">
@@ -40,7 +40,7 @@ export const Events = () => {
 
                                     {/* text info */}
                                     <div className="flex flex-col justify-center flex-1 items-center md:items-start text-center md:text-left">
-                                        <h4 className="text-xl sm:text-2xl text-[#1F145D] font-semibold mb-4">{event.title}</h4>
+                                        <h4 className="text-l sm:text-xl text-[#1F145D] font-semibold mb-4">{event.title}</h4>
 
                                         {/* event location */}
                                         <div className="flex items-center gap-3 mb-4 justify-center md:justify-start">

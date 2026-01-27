@@ -1,5 +1,14 @@
 [
     {
+        "eventName":"Spring 2026 Icebreaker", 
+        "date": "Spring 2026",
+        "image": "/past-events/spring-icebreaker-2026.png",
+        "alt": "Executives and general members at our first event of the Spring 2026 semester", 
+        "descriptions": [
+            "Our icebreaker event welcomed general members and helped everyone connect through fun games. They also got to know more about our UNICEF SFU and how they can get involved. "
+        ]
+    },
+    {
         "eventName": "A Light in the Dust: Solidarity for Afghanistan's Recovery - Advocacy Campaign",
         "date": "Fall 2025",
         "image": "/past-events/a-light-in-the-dust.png",
@@ -33,15 +42,6 @@
         "alt": "Our ambassadors volunteering for our Krispy Kreme Fundraiser",
         "descriptions": [
             "Our fundraiser advocated for children's rights to survive and thrive around the world."
-        ]
-    },
-    {
-        "eventName":"Fall 2025 Icebreaker", 
-        "date": "Fall 2025",
-        "image": "/past-events/icebreaker-fall-2025.jpg",
-        "alt": "Executives and general members at our first event of the Fall 2025 semester", 
-        "descriptions": [
-            "Our icebreaker event welcomed general members and helped everyone connect through fun games. They also got to know more about our UNICEF SFU and how they can get involved. "
         ]
     },
     {
