@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 export const Home = () => {
   const stats = [
     { number: "500+", label: "Club Members" },
@@ -5,7 +7,7 @@ export const Home = () => {
     { number: "$3,000+", label: "Raised for Charity" },
     { number: "60+", label: "Advocacy Campaigns" },
   ]
-
+  
   const galleryItems = [
     {
       id: "gallery-0",
@@ -27,7 +29,32 @@ export const Home = () => {
       title: "Work Simulation",
       img: "/event-gallery/work-simulation.jpeg",
     },
+    {
+      id: "gallery-4",
+      title: "Fall 2025 Icebreaker",
+      img: "/past-events/icebreaker-fall-2025.jpg"
+    },
+    {
+      id: "gallery-5",
+      title: "Krispy Kreme Fundraiser",
+      img: "/past-events/krispy-kreme-fundraiser.PNG"
+    },
+    {
+      id: "gallery-6", 
+      title: "bright-futures-gala.png",
+      img: "/past-events/bright-futures-gala.png"
+    }
   ]
+
+  const [current, setCurrent] = useState(0)
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % galleryItems.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev - 1 + galleryItems.length) % galleryItems.length);
+  };
 
   return (
     <div>
@@ -77,7 +104,8 @@ export const Home = () => {
       </div>
 
       {/* Event Gallery */}
-      <div className="w-full bg-[#D9D9D9] py-16">
+      <div className="w-full bg-[#EEEEEE] py-16 flex flex-col items-center">
+
         <div className="max-w-6xl mx-auto px-6 flex flex-col items-center">
           <h2 className="text-4xl font-semibold text-[#1CABE2] mb-3">
             Event Gallery
@@ -85,28 +113,53 @@ export const Home = () => {
           <p className="text-sm text-black/70 text-center mb-10">
             Browse through our image gallery of previous events and fundraisers!
           </p>
+        </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 w-full">
-            {galleryItems.map((item) => (
-              <div
-                key={item.id}
-                className="bg-white rounded-2xl h-44 sm:h-48 md:h-52 shadow-sm overflow-hidden"
-              >
-                {item.img ? (
+        {/* Carousel */}
+        <div className="relative w-3/4 overflow-hidden">
+          <div
+            className="flex transition-transform duration-500 ease-in-out"
+            style={{ transform: `translateX(-${current * (100 / 3)}%)` }}>
+              {galleryItems.map((item, index) => (
+                <div className="w-1/3 flex-shrink-0 p-2">
                   <img
+                    key={item.id}
                     src={item.img}
                     alt={item.title}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center text-black/30 font-medium">
-                    Image
-                  </div>
-                )}
-              </div>
-            ))}
+                    className="w-full h-64 object-contain rounded-lg cursor-zoom-in"
+                    >
+                  </img>
+                </div>
+              ))}
           </div>
+
+          {/* arrows to navigate prev and next images */}
+          <button
+            onClick={prevSlide}
+            className="absolute top-1/2 left-0 -translate-y-1/2 bg-white/80 p-1 rounded-full shadow hover:bg-white"
+          >
+            ‹
+          </button>
+
+          <button
+            onClick={nextSlide}
+            className="absolute top-1/2 right-0 -translate-y-1/2 bg-white/80 p-1 rounded-full shadow hover:bg-white"
+          >
+            ›
+          </button>
         </div>
+
+        {/* dots */}
+        <div className="mt-4 flex justify-center gap-2">
+          {galleryItems.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrent(index)}
+              className={`w-3 h-3 rounded-full ${index === current ? "bg-[#1CABE2]" : "bg-white"}`}>
+            </button>
+          ))}
+        </div>
+
       </div>
     </div>
   )
