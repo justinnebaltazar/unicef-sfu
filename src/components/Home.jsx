@@ -46,15 +46,34 @@ export const Home = () => {
     }
   ]
 
-  const [current, setCurrent] = useState(0)
+  const [current, setCurrent] = useState(0);
+  const [visibleCount, setVisibleCount] = useState(3);
 
   const nextSlide = () => {
-    setCurrent((prev) => (prev + 1) % galleryItems.length);
+    setCurrent((prev) => prev >= galleryItems.length - visibleCount ? 0 : prev + 1);
   };
 
   const prevSlide = () => {
-    setCurrent((prev) => (prev - 1 + galleryItems.length) % galleryItems.length);
+    setCurrent((prev) => prev <= 0 ? galleryItems.length - visibleCount : prev - 1);
   };
+
+  useEffect(() => {
+    const updateVisibleCount = () => {
+      if (window.innerWidth < 640) {
+        setVisibleCount(1); // Mobile
+      } else if (window.innerWidth < 1024) {
+        setVisibleCount(2);
+      } else {
+        setVisibleCount(3); // Desktop
+      }
+  };
+
+  updateVisibleCount();
+  window.addEventListener("resize", updateVisibleCount);
+
+  return () => window.removeEventListener("resize", updateVisibleCount);
+}, []);
+
 
   return (
     <div>
@@ -119,9 +138,9 @@ export const Home = () => {
         <div className="relative w-3/4 overflow-hidden">
           <div
             className="flex transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${current * (100 / 3)}%)` }}>
+            style={{transform: `translateX(-${current * (100 / visibleCount)}%)`,}}>
               {galleryItems.map((item, index) => (
-                <div className="w-1/3 flex-shrink-0 p-2">
+                <div className="flex-shrink-0 p-2 w-full sm:w-1/2 lg:w-1/3">
                   <img
                     key={item.id}
                     src={item.img}
@@ -147,17 +166,6 @@ export const Home = () => {
           >
             ›
           </button>
-        </div>
-
-        {/* dots */}
-        <div className="mt-4 flex justify-center gap-2">
-          {galleryItems.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrent(index)}
-              className={`w-3 h-3 rounded-full ${index === current ? "bg-[#1CABE2]" : "bg-white"}`}>
-            </button>
-          ))}
         </div>
 
       </div>
