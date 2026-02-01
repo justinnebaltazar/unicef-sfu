@@ -30,7 +30,7 @@ export const Navbar = () => {
       <div className="max-w-screen-xl mx-auto px-4 py-2 lg:px-8 lg:py-4">
         {/* Top section */}
         <div className="flex flex-wrap items-center justify-between">
-          {/* Logo - will be replaced once we have final version*/}
+        
           <div className="flex items-center">
             <Link to="/" className="mr-4 py-1.5 font-medium text-blue-gray-900">
               <img
@@ -121,12 +121,12 @@ export const Navbar = () => {
                 </li>
             </ul>
             <div className="flex flex-col sm:flex-row sm:items-center gap-2">
-              <button className="bg-[#374EA2] hover:bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-medium w-full sm:w-auto">
+              <button className="bg-[#374EA2] hover:bg-blue-800 text-white px-2 md:px-4 py-2 rounded-lg text-sm font-medium w-full sm:w-auto">
                 <a href="https://go.sfss.ca/clubs/166/info" 
                   target='_blank' rel='noopener noreferrer'>Join USFU</a>
               </button>
               
-              <button className="bg-[#374EA2] hover:bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-medium w-full sm:w-auto">
+              <button className="bg-[#374EA2] hover:bg-blue-800 text-white px-2 md:px-4 py-2 rounded-lg text-sm font-medium w-full sm:w-auto">
                 <a href="https://fundraise.unicef.ca/campus-clubs-2025/unicef-sfu-fundraising-" 
                   target='_blank' rel='noopener noreferrer'>Donate</a>
               </button>

@@ -40,7 +40,7 @@ export const Events = () => {
 
                                     {/* text info */}
                                     <div className="flex flex-col justify-center flex-1 items-center md:items-start text-center md:text-left">
-                                        <h4 className="text-l sm:text-xl text-[#1F145D] font-semibold mb-4">{event.title}</h4>
+                                        <h4 className="text-l sm:text-xl w-full text-[#1F145D] font-semibold mb-4">{event.title}</h4>
 
                                         {/* event location */}
                                         <div className="flex items-center gap-3 mb-4 justify-center md:justify-start">
@@ -62,7 +62,7 @@ export const Events = () => {
                                         {/* instagram link post / more info  */}
                                         {event.postLink && (
                                             <a href={event.postLink} target="_blank" rel="noopener noreferrer" className="mt-4 w-fit self-center md:self-start">
-                                                <button className="px-6 py-2 bg-[#009EDB] text-white rounded-lg font-semibold hover:bg-[#007fb0] transition">
+                                                <button className="px-4 py-1 md:px-6 md:py-2 bg-[#009EDB] text-white rounded-lg font-semibold hover:bg-[#007fb0] transition">
                                                     Learn More
                                                 </button>
                                             </a>
@@ -73,13 +73,15 @@ export const Events = () => {
                                 {/* image */}
                                 <div className="w-full md:w-1/2 flex-shrink-0 flex items-center justify-center md:justify-end p-3 sm:p-4">
                                     <div className="w-[220px] h-[220px] rounded-2xl overflow-hidden bg-white shadow-sm">
-                                        <img 
-                                            src={event.imgLink} alt={event.title} className="w-full h-full object-cover"
-                                            onError={(e) => {
-                                                console.error("Image failed to load:", event.imgLink)
-                                                e.target.src = "posts/unicef-logo.png"
-                                            }}
-                                        />
+                                        <a href={event.postLink} target="_blank" rel="noopener noreferrer">
+                                            <img 
+                                                src={event.imgLink} alt={event.title} className="w-full h-full object-cover"
+                                                onError={(e) => {
+                                                    console.error("Image failed to load:", event.imgLink)
+                                                    e.target.src = "posts/unicef-logo.png"
+                                                }}
+                                            />
+                                        </a>
                                     </div>
                                 </div>
                             </div>
