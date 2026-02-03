@@ -12,7 +12,7 @@ export const InstagramFeed = () => {
                         target="_blank"
                         className="flex items-center"
                     >
-                        <img src="instagram-logo.png" alt="instagram-logo" className="w-7 h-7"/>
+                        <img src="/icons/instagram-logo.png" alt="instagram-logo" className="w-7 h-7"/>
                     </a>
                     <a href="https://www.instagram.com/usfuclub/"
                         rel="noopener noreferrer"
@@ -36,7 +36,7 @@ export const InstagramFeed = () => {
                     {/* Instagram icon overlay */}
                     <div className="absolute top-2 right-2 z-10 p-1 ">
                         <img 
-                            src="/white-instagram-logo.svg" 
+                            src="/icons/white-instagram-logo.svg" 
                             alt="instagram" 
                             className="w-7 h-7"
                         />

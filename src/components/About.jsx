@@ -2,11 +2,11 @@ const TEAM_DATA = {
   "The Board": [
     { name: "Alveena Babul", role: "Co-President", img: "/team pics/Alveena-Babul.jpeg" },
     { name: "Sarah Wiese", role: "Co-President", img: "/team pics/Sarah-Wiese.jpeg"  },
-    { name: "Amareet Dhaliwal", role: "VP Of External Relations", img: "/team pics/Amareet-Dhaliwal.jpeg" },
-    { name: "Jasnoor Sekhon", role: "VP Of Communications", img: "/team pics/Jasnoor.jpeg" },
-    { name: "Grace Tognotti", role: "VP Of Internal Relations", img: "/team pics/Grace-Tognotti.jpeg" },
-    { name: "Therese Baido", role: "VP Of Advocacy", img: "/team pics/Therese-Baido.jpeg" },
-    { name: "Martin Aguliar", role: "VP Of Finance", img: "/team pics/Martin-Aguilar.jpeg" },
+    { name: "Amareet Dhaliwal", role: "VP of External Relations", img: "/team pics/Amareet-Dhaliwal.jpeg" },
+    { name: "Jasnoor Sekhon", role: "VP of Communications", img: "/team pics/Jasnoor.jpeg" },
+    { name: "Grace Tognotti", role: "VP of Internal Relations", img: "/team pics/Grace-Tognotti.jpeg" },
+    { name: "Therese Baido", role: "VP of Advocacy", img: "/team pics/Therese-Baido.jpeg" },
+    { name: "Martin Aguliar", role: "VP of Finance", img: "/team pics/Martin-Aguilar.jpeg" },
   ],
   "Internals Team": [
     { name: "Alex Hanada", role: "Internal Events Director", img: "/team pics/Alexander-Hanada.jpeg" },

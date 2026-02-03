@@ -17,7 +17,7 @@ export const Events = () => {
             <div className="w-full sm:w-9/10 max-w-5xl p-4">
                 {events.map((monthData, monthIndex) => (
                     <div key={monthIndex}>
-                        <h3 className="text-2xl sm:text-4xl p-2 sm:p-8 text-[#009EDB] font-semibold">{monthData.month} Events</h3>
+                        <h3 className="text-2xl sm:text-4xl  md:p-8 text-[#009EDB] font-semibold">{monthData.month} Events</h3>
 
                         {/* all upcoming events for the month */}
                         {monthData.events.map((event, eventIndex) => (
@@ -44,7 +44,7 @@ export const Events = () => {
 
                                         {/* event location */}
                                         <div className="flex items-center gap-3 mb-4 justify-center md:justify-start">
-                                            <img src="/location-icon.png" alt="location-icon" className="hidden sm:block w-8 h-8"/>
+                                            <img src="/icons/location-icon.png" alt="location-icon" className="hidden sm:block w-8 h-8"/>
                                             <div>
                                                 <p className="text-md text-[#5D5D5D]">{event.building}</p>
                                                 <p className="text-md text-[#5D5D5D]">{event.room}</p>
@@ -54,7 +54,7 @@ export const Events = () => {
                                         
                                         {/* time info */}
                                         <div className="flex items-center gap-3 mb-4 justify-center md:justify-start">
-                                            <img src="/clock-icon.png" alt="time" className="hidden sm:block w-8 h-8"/>
+                                            <img src="/icons/clock-icon.png" alt="time" className="hidden sm:block w-8 h-8"/>
 
                                             <p className="text-md text-[#5D5D5D]">{event.time}</p>
                                         </div>

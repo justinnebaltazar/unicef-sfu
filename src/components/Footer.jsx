@@ -9,9 +9,9 @@ export const Footer = () => {
     ]
 
     const socialLinks = [
-        { name: 'Instagram', path: 'https://www.instagram.com/usfuclub/', icon: "/instagram-logo.png"},
-        { name: 'TikTok', path: 'https://www.tiktok.com/@unicefsfu', icon: "/tiktok-logo.png"},
-        { name: 'LinkedIn', path: 'https://www.linkedin.com/company/unicef-sfu/', icon: "/linkedin-logo.png"},
+        { name: 'Instagram', path: 'https://www.instagram.com/usfuclub/', icon: "/icons/instagram-logo.png"},
+        { name: 'TikTok', path: 'https://www.tiktok.com/@unicefsfu', icon: "/icons/tiktok-logo.png"},
+        { name: 'LinkedIn', path: 'https://www.linkedin.com/company/unicef-sfu/', icon: "/icons/linkedin-logo.png"},
     ]
 
      return (

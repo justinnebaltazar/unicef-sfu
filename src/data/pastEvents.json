@@ -1,5 +1,14 @@
 [
     {
+        "eventName": "For every bite, a better life: a Krispy Kreme Fundraiser",
+        "date": "Spring 2026",
+        "image": "/past-events/spring_krispy_kreme_fundraiser.png",
+        "alt": "Our ambassadors volunteering for our Krispy Kreme Fundraiser",
+        "descriptions": [
+            "Thank you to everyone who bought donuts and supported our Krispy Kreme fundraiser! Our fundraiser advocated for children's rights to survive and thrive around the world."
+        ]
+    },
+    {
         "eventName":"Spring 2026 Icebreaker", 
         "date": "Spring 2026",
         "image": "/past-events/spring-icebreaker-2026.png",
@@ -33,15 +42,6 @@
         "alt": "Some of our executives presenting for the Behind the Seams event",
         "descriptions": [
             "The internals team organized an event that advocated for the awareness and prevention of child labour and how we can make a difference through our consumption choices. The event also featured a clothing drive for Big Brothers of Greater Vancouver."
-        ]
-    },
-    {
-        "eventName": "For every bite, a better life: a Krispy Kreme Fundraiser",
-        "date": "Fall 2025",
-        "image": "/past-events/krispy-kreme-fundraiser.PNG",
-        "alt": "Our ambassadors volunteering for our Krispy Kreme Fundraiser",
-        "descriptions": [
-            "Our fundraiser advocated for children's rights to survive and thrive around the world."
         ]
     },
     {

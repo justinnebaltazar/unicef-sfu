@@ -140,9 +140,8 @@ export const Home = () => {
             className="flex transition-transform duration-500 ease-in-out"
             style={{transform: `translateX(-${current * (100 / visibleCount)}%)`,}}>
               {galleryItems.map((item, index) => (
-                <div className="flex-shrink-0 p-2 w-full sm:w-1/2 lg:w-1/3">
+                <div className="flex-shrink-0 p-2 w-full sm:w-1/2 lg:w-1/3" key={item.id}>
                   <img
-                    key={item.id}
                     src={item.img}
                     alt={item.title}
                     className="w-full h-64 object-contain rounded-lg cursor-zoom-in"

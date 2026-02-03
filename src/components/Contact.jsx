@@ -66,12 +66,12 @@ export const Contact = () => {
                     {/* address + contact info  */}
                     <div className="space-y-4">
                         <div className="flex items-start gap-3 content-center">
-                            <img src="/location-icon.png" alt="Location icon" className="mt-1 h-6 w-6" />
+                            <img src="/icons/location-icon.png" alt="Location icon" className="mt-1 h-6 w-6" />
                             <p className="text-gray-700">8888 University Drive West Burnaby, BC V5A 1S6</p>
                         </div>
 
                         <div className="flex items-start gap-3 content-center">
-                            <img src="/email-icon.png" alt="Email icon" className="mt-1 h-6 w-6" />
+                            <img src="/icons/email-icon.png" alt="Email icon" className="mt-1 h-6 w-6" />
                             <p className="text-gray-700">usfu.club@gmail.com</p>
                         </div>
                     </div>
