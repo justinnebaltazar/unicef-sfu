@@ -10,6 +10,7 @@ import { Footer } from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Sponsors } from "./components/Sponsors";
 import { PastEvents } from "./components/PastEvents";
+import { Gala } from "./components/Gala";
 
 function App() {
   return (
@@ -46,12 +47,23 @@ function App() {
           }>
           </Route>
 
+          {/* contact page */}
           <Route path="/contact" element={
             <>
               <Navbar/>
               <Contact/>
             </>
           }>
+          </Route>
+
+          {/* gala page */}
+          <Route path="/gala" element={
+            <>
+              <Navbar/>
+              <Gala/>
+            </>
+          }>
+
           </Route>
 
         </Routes>
