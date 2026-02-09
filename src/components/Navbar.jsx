@@ -18,7 +18,8 @@ export const Navbar = () => {
   const navLinks = [
     { name: 'About Us', path: '/about' },
     { name: 'Events', path: '/events' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'Contact', path: '/contact' },
+    { name: 'Light of Life Gala', path: '/gala'}
   ]
 
   const handleLinkClick = () => {
