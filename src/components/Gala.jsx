@@ -10,8 +10,11 @@ export const Gala = () => {
     const SILVER_TIER_PRIZES = [
         { title: "Classic Date Night", prize: "$25 - Old Spaghetti Factory", prize2: "$50 - Landmark Cinema (2 Movie Tickets & 2 Medium Popcorns" },
         { title: "Garden Getaway", total_price: "$66 Total", prize: "4 passes to UBC Botanical Garden", prize2: "4 passes to Nitobe Memorial Garden" }, 
+        { title: "Sweet Tooth", prize: "$70 - Rain or Shine Ice Cream and Bon Macaron Patisserie"},
         { title: "Space Discovery", prize: "$84 - Family Pass to the H.R. MacMillan Space Centre" }, 
-        { title: "Rainy Day in Downtown", prize: "$36 - 2 Cineplex Movie Tickets", prize2: "$58 - 2 passes to the Vancouver Art Gallery" }
+        { title: "Rainy Day in Downtown", prize: "$36 - 2 Cineplex Movie Tickets", prize2: "$58 - 2 passes to the Vancouver Art Gallery" },
+        { title: "Campus Essentials", prize: "$130 - SFU Bookstore, Travis and Wells tech backpack, and Champion unisex sweatshirt (size small)"},
+        { title: "Museum Lovers", prize: "$150 - Beaty Biodiversity Museum (1-year family membership) and Museum of Anthropology (1-year individual membership)"}
     ]
 
     return (
@@ -106,9 +109,9 @@ export const Gala = () => {
                 {/* silver tier prizes */}
                 <div className="text-center">
                     <h2 className="font-great-vibes text-4xl sm:text-5xl md:text-6xl py-10">Silver Tier Raffle Prizes</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                    <div className="flex flex-wrap justify-center gap-6">
                         {SILVER_TIER_PRIZES.map((item, index) => (
-                            <div key={index} className="flex flex-col  p-4">
+                            <div key={index} className="flex flex-col p-4 w-full sm:w-[calc(50%-1.5rem)] md:w-[calc(25%-1.5rem)] min-w-[250px]">
                                 <h3 className="font-libre font-bold mb-2 text-lg sm:text-2xl">{item.title}</h3>
                                 {item.total_price && (
                                     <p className="font-libre pb-2 text-l sm:text-xl">{item.total_price}</p>

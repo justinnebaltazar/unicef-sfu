@@ -1,10 +1,10 @@
 [
   {
-    "id": 1, 
-    "image": "/posts/gala_tickets_post.jpg", 
-    "caption": "gala-tickets-post",
-    "link": "https://www.instagram.com/p/DUjUP4dkmwS/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA=="
-  }, 
+    "id": 1,
+    "image": "/posts/pop-up-tickets.jpg",
+    "caption": "gala-tickets-pop-up",
+    "link": "https://www.instagram.com/p/DVKDEd7kkEA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  },
   {
     "id": 2,
     "image": "/posts/gala_reel.jpg",
@@ -12,11 +12,11 @@
     "link": "https://www.instagram.com/reel/DUj462-idhu/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA=="
   },
   {
-    "id": 3,
-    "image": "/posts/gala_info_post.jpg",
-    "caption": "gala-info-post", 
-    "link": "https://www.instagram.com/p/DUW53QCCU92/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA=="
-  },
+    "id": 3, 
+    "image": "/posts/gala_tickets_post.jpg", 
+    "caption": "gala-tickets-post",
+    "link": "https://www.instagram.com/p/DUjUP4dkmwS/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA=="
+  }, 
   {
     "id": 4,
     "image": "/posts/general_meeting.jpg",
