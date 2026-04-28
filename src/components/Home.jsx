@@ -80,7 +80,7 @@ export const Home = () => {
       {/* Banner */}
       <div className="relative w-full aspect-[22/10] overflow-hidden">
         <img
-          src="/new-banner.png"
+          src="/club_banner.png"
           alt="UNICEF image"
           className="w-full h-full object-cover object-[100%_100%]"
         />

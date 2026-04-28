@@ -2,7 +2,7 @@ export const Gala = () => {
     
     const GOLD_TIER_PRIZES = [
         { title: "Escape Room Challenge", prize: "$120 - 4 passes to EXIT Burnaby" },
-        { title: "Sports Night", prize: "$140 - 4 tickets to a Vancouver Bandits Game" },
+        { title: "Sports Night", prize: "$140 - 4 tickets to a Vancouver Bandits Game", prize2: "$120 - 4 Tickets to a Vancouver Canadians Baseball Game" },
         { title: "Laser Tag Party", prize: "$235 - 4 games for 8 players at Laserdome+" },
         { title: "Road to Recovery", prize: "5 draws of $200 - Free Massage/Physio Sessions at Launch Rehab" }
     ];
@@ -98,9 +98,12 @@ export const Gala = () => {
                     <h2 className="font-great-vibes text-4xl sm:text-5xl md:text-6xl py-10">Gold Tier Raffle Prizes</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                         {GOLD_TIER_PRIZES.map((item, index) => (
-                            <div key={index} className="flex flex-col  p-4">
+                            <div key={index} className="flex flex-col p-4">
                                 <h3 className="font-libre font-bold text-l sm:text-2xl mb-2">{item.title}</h3>
                                 <p className="font-libre text-l sm:text-xl">{item.prize}</p>
+                                {item.prize2 && (
+                                    <p className="font-libre pt-4 text-l sm:text-xl">{item.prize2}</p>
+                                )}
                             </div>
                         ))}
                     </div>
@@ -108,7 +111,7 @@ export const Gala = () => {
 
                 {/* silver tier prizes */}
                 <div className="text-center">
-                    <h2 className="font-great-vibes text-4xl sm:text-5xl md:text-6xl py-10">Silver Tier Raffle Prizes</h2>
+                    <h2 className="font-great-vibes text-4xl sm:text-5xl md:text-6xl py-20">Silver Tier Raffle Prizes</h2>
                     <div className="flex flex-wrap justify-center gap-6">
                         {SILVER_TIER_PRIZES.map((item, index) => (
                             <div key={index} className="flex flex-col p-4 w-full sm:w-[calc(50%-1.5rem)] md:w-[calc(25%-1.5rem)] min-w-[250px]">
@@ -164,7 +167,144 @@ export const Gala = () => {
                 </div>
 
             </div>
+
+            {/* menu */}
+            <div className="px-10 py-15"
+                style={{
+                    backgroundImage: `url('/gala/gala-bg.png')`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                }}
+            >
+                <h2 className="font-great-vibes text-4xl sm:text-6xl text-center my-10">Menu</h2>
+
+                
+                {/* dinner sponsor */}
+                <div className="w-full">
+
+                    {/* <div>
+                        <p>Thank you to our sponsors, KRSMA Indian Restaurant and Sassy Treats, for generously providing dinner for the Light of Life gala. </p>
+                    </div> */}
+
+                    {/* logos + menu */}
+                    <h2 className="font-great-vibes text-4xl sm:text-6xl text-center my-10">Main Course</h2>
+                    <div className="w-full flex">
+                        
+                        {/* sponsor logo */}
+                        <div className="w-full flex flex-col md:flex-row justify-center items-center gap-12 my-4">
+                            <div className="rounded-full w-60 h-60 sm:w-64 sm:h-64 overflow-hidden">
+                                <img src="/sponsors/krsma-logo-clear.png" className="w-full h-full object-cover"></img>
+
+                            </div> 
+
+                            <div>
+                                <div className="flex flex-row gap-10 justify-center items-center">
+                                    <div className="text-center">
+                                        <h2 className="text-2xl font-libre font-bold">Butter Chicken</h2>
+                                        <p className="font-libre text-xl">Non-Vegetarian</p>
+                                        
+                                    </div>
+
+                                    <div className="text-center">
+                                        <h2 className="text-2xl font-libre font-bold">Paneer Butter Masala</h2>
+                                        <p className="font-libre text-xl">Vegetarian</p>
+                                    </div>
+
+                                    <div className="text-center">
+                                        <h2 className="text-2xl font-libre font-bold">Chana Masala</h2>
+                                        <p className="font-libre text-xl">Vegan</p>
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center items-center gap-10 mt-10">
+                                    <h2 className="text-2xl font-libre font-bold">Basmati Rice</h2>
+                                    <h2 className="text-2xl font-libre font-bold">Assorted Naan</h2>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                {/* dessert sponsor */}
+                <div>
+                    <h2 className="font-great-vibes text-4xl sm:text-6xl text-center my-10">Dessert</h2>
+                    <div className="w-full flex flex-col md:flex-row justify-center items-center gap-12 my-4">
+                        <div>
+                            <p className="font-libre text-2xl font-bold">UNICEF-themed cupcakes and dessert</p>
+                        </div>
+
+                        <div>
+                            <div className="w-60 h-60 sm:w-90 sm:h-70 overflow-hidden">
+                                <img src="/sponsors/sassy-treats-logo-big.jpg" className="w-full h-full object-cover"></img>
+
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div className="flex justify-center mt-25">
+                    <h2 className="font-libre text-2xl w-3/4 text-center font-bold">Thank you to our sponsors, KRSMA Indian Restaurant and Sassy Treats, for generously providing dinner for the Light of Life gala. </h2>
+                </div>
+
+                <div>
+                    {/* sponsor website button */}
+                    <div className="flex items-center justify-center mt-6 gap-10">
+                        <div className="rounded-2xl p-6 md:p-4 text-center border-2 bg-black w-1/3" >
+                            <a 
+                                href="https://krsmaindianrestaurant.com/"
+                                target='_blank' rel='noopener noreferrer'
+                            >
+                                <p className="text-white text-l sm:text-xl font-libre">Visit Krsma Indian Restaurant</p>
+                            </a>
+                        </div>
+                        <div className="rounded-2xl p-6 md:p-4 text-center border-2 bg-black w-1/3" >
+                            <a 
+                                href="https://www.instagram.com/_sassy.treats_/"
+                                target='_blank' rel='noopener noreferrer'
+                            >
+                                <p className="text-white text-l sm:text-xl font-libre">Visit Sassy Treats</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             
         </div>
     )
 }
+
+                // {/* menu items */}
+                // <div className="flex flex-row gap-10 justify-center items-center">
+                //     <div className="text-center">
+                //         <h2 className="text-2xl font-libre font-bold">Butter Chicken</h2>
+                //         <p className="font-libre text-xl">Non-Vegetarian</p>
+                //     </div>
+                //     <div className="text-center">
+                //         <h2 className="text-2xl font-libre font-bold">Paneer Butter Masala</h2>
+                //         <p className="font-libre text-xl">Vegetarian</p>
+                //     </div>
+                //     <div className="text-center">
+                //         <h2 className="text-2xl font-libre font-bold">Chana Masala</h2>
+                //         <p className="font-libre text-xl">Vegan</p>
+                //     </div>
+                // </div>
+                // <div className="flex justify-center items-center gap-10 mt-10">
+                //     <h2 className="text-2xl font-libre font-bold">Basmati Rice</h2>
+                //     <h2 className="text-2xl font-libre font-bold">Assorted Naan</h2>
+                // </div>
+
+// font-great-vibes text-4xl sm:text-6xl text-center my-10
+
+                                // {/* sponsor website button */}
+                                // <div className="flex items-center justify-center pt-5">
+                                //     <div className="rounded-2xl p-6 md:p-4 text-center border-2 bg-black w-1/2" >
+                                //         <a 
+                                //             href="https://krsmaindianrestaurant.com/"
+                                //             target='_blank' rel='noopener noreferrer'
+                                //         >
+                                //             <p className="text-white text-l sm:text-xl font-libre">Visit Krsma Indian Restaurant</p>
+                                //         </a>
+                                //     </div>
+                                // </div>
